@@ -66,21 +66,16 @@ import { Image } from "astro:assets";
         <h2 class="text-2xl text-center">Skills</h2>
       </div>
 
-      <!-- <div class="m-5 justify-around flex flex-row border-4 border-red-600 gap-x-px"> -->
       <div class="grid grid-cols-3 m-3">
-        <!-- <div
-        class="bg-pink-100
-      border-8 border-red-800 m-5 grid grid-cols-3 tracking-tight lg:flex lg:flex-row"
-      > -->
         <div class="border-r-2 border-dashed text-center">
           <h3 class="font-bold underline">Front End</h3>
           <p>
             <span class="react-span">React</span> | <span class="next-span"
               >NextJS</span
-            > | <span class="JS-span">JavaScript</span> | TypeScript | HTML5 | CSS3
-            | <span class="jest-span">Jest</span> | <span
-              class="playwright-span">Playwright</span
-            >
+            > | <span class="JS-span">JavaScript</span> | <span class="AS-span"
+              >Astro</span
+            > | TypeScript | HTML5 | CSS3 | <span class="jest-span">Jest</span> |
+            <span class="playwright-span">Playwright</span>
           </p>
         </div>
 
@@ -103,237 +98,265 @@ import { Image } from "astro:assets";
         <h2 class="text-2xl text-center">Projects</h2>
       </div>
       <div class="md:m-10 m-5 flex flex-col space-y-5">
-        <div class="inline-block">
-          <!-- <Projects
-            title="Raena Cohen EPK"
-            tag="Eletronic Press Kit for a musician"
-            site="https://raena-cohen-epk.vercel.app/"
-            repo="https://github.com/K-velvet-P/Raena-Cohen-EPK"
-            tech_Frontend="Frontend: JavaScript | Next.js React-Hook-Forms | Jest Playwrite | Vercel"
-            tech_Backend="Backend: Node.js | Nodemailer"
-            tech_Other="Styling and Animation: Animate.css"
-          > -->
-
+        <div class="flex flex-col gap-5">
           <Projects
-            title="Raena Cohen EPK"
-            tag="Eletronic Press Kit for a musician"
-            site="https://raena-cohen-epk.vercel.app/"
-            repo="https://github.com/K-velvet-P/Raena-Cohen-EPK"
+            title="Waggles & Whiskers"
+            tag="Dog walking site, with CMS for client to update site."
+            site="https://www.waggleswhiskers.com/"
+            repo="https://github.com/lpoulter1/whiskers-cms"
           >
-            <!-- add child here  -->
-            <!-- <h1>Tech Stack</h1> -->
             <div>
               <p class="text-[13px] border-2 w-fit">
-                Frontend: <span class="JS-span">JavaScript</span> | <span
-                  class="next-span">Next.js</span
-                > | <span class="react-span">React-Hook-Forms</span> | <span
-                  class="jest-span">Jest</span
-                >
-                <span class="playwright-span">Playwright</span> | Vercel
-              </p>
-              <p class="text-[13px] border-2 w-fit">
-                Backend: <span class="node-span">Node.js</span> | <span
-                  class="node-span">Nodemailer</span
-                >
-              </p>
-              <p class="text-[13px] border-2 w-fit">
-                Styling and Animation: Animate.css
-              </p>
-            </div>
+                Frontend: <span class="AS-span">Astro</span> | <span
+                  class="JS-span">Jaravascript</span
+                > | <span class="jest-span">Vercel</span>
 
-            <div class="m-3">
-              <ul class="list-disc flex flex-col gap-5 md:gap-2">
-                <li class="spotlight">
-                  Designed and built a responsive, mobile-first website for a
-                  musician.
-                </li>
-                <li class="spotlight">
-                  Liaised with client to design, implement and adapt according
-                  to feedback.
-                </li>
-                <li class="spotlight">
-                  Utilised various methods to showcase artist work, such as
-                  I-frames and connecting to Linktrees.
-                </li>
-                <li class="spotlight">
-                  Integrated a contact form using <span class="node-span"
-                    >Nodemailer</span
-                  > , attached directly to the clients professional email. Including
-                  validation and feedback.
-                </li>
-              </ul>
+                <p class="text-[13px] border-2 w-fit">
+                  Backend: <span class="node-span">Node.js</span> | Storyblok
+                </p>
+                <p class="text-[13px] border-2 w-fit">Libraries: Shadcn</p>
+              </p>
+
+              <div class="m-3">
+                <ul class="list-disc flex flex-col gap-5 md:gap-2">
+                  <li class="spotlight">
+                    Learnt headless CMS Storyblok and integrated to site for
+                    future use by client .
+                  </li>
+                  <li class="spotlight">
+                    Collaborated on project with daily stand ups and Pair
+                    Programming
+                  </li>
+                  <li class="spotlight">
+                    Liaised with Client on pain points on old website and
+                    implemented solutions into new site
+                  </li>
+                </ul>
+              </div>
             </div>
           </Projects>
-        </div>
-
-        <div class="flex flex-col">
-          <div class="">
-            <div class="flex flex">
-              <Projects
-                title="Paws For Affection"
-                tag="Dog adoption site"
-                site="https://pawsforaffection.netlify.app/"
-                repo="https://github.com/K-velvet-P/TheHackitectsFinalProjects"
-              />
-            </div>
-
-            <div>
-              <p class="text-[13px] border-2 w-fit">
-                Frontend: <span class="JS-span">JavaScript</span> |
-                <span class="react-span">React</span> | Swiper Material UI | <span
-                  class="jest-span">Jest</span
-                >
-                <span class="playwright-span">Playwright</span> | Netlify
-              </p>
-              <p class="text-[13px] border-2 w-fit">
-                Backend: <span class="node-span">Node.js</span> | Supabase
-              </p>
-            </div>
-
-            <div class="m-3 background-spotlight">
-              <ul class="list-disc flex flex-col gap-5 md:gap-2">
-                <li class="spotlight">
-                  Developed a full-stack <span class="react-span">React</span>
-                  app in an agile team and demoing it to industry experts.
-                </li>
-                <li class="spotlight">
-                  Collaborated with team members to ideate, plan and execute the
-                  project
-                </li>
-                <li class="spotlight">
-                  Participated in pair programming, improving team-working,
-                  communication, and problem-solving skills.
-                </li>
-                <li class="spotlight">
-                  Led the team in daily stand-ups, retros and sprints.
-                </li>
-                <li class="spotlight">
-                  Contributed to building a database, linking it to the frontend
-                  and displaying dogs avabile for adoption on site.
-                </li>
-                <li class="spotlight">
-                  Contributed to implementing log in functionally with
-                  authorisation.
-                </li>
-                <li class="spotlight">
-                  Contributed to utelising superbase’s built it Postgrest query
-                  builder to allow authorised users to populate the database.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="">
+          <div class="inline-block">
             <Projects
-              title="Top Trump Star Wars"
-              tag="Top Trump card game"
-              site="https://top-trump-star-wars.vercel.app/"
-              repo="https://github.com/K-velvet-P/TopTrumpStarWars"
+              title="Raena Cohen EPK"
+              tag="Eletronic Press Kit for a musician"
+              site="https://raena-cohen-epk.vercel.app/"
+              repo="https://github.com/K-velvet-P/Raena-Cohen-EPK"
             >
-              <div class="background-spotlight">
+              <div>
                 <p class="text-[13px] border-2 w-fit">
                   Frontend: <span class="JS-span">JavaScript</span> | <span
-                    class="react-span">React</span
-                  > | <span class="jest-span">Jest</span>
+                    class="next-span">Next.js</span
+                  > | <span class="react-span">React-Hook-Forms</span> | <span
+                    class="jest-span">Jest</span
+                  >
                   <span class="playwright-span">Playwright</span> | Vercel
                 </p>
                 <p class="text-[13px] border-2 w-fit">
-                  Backend: <span class="node-span">Node.js</span>
+                  Backend: <span class="node-span">Node.js</span> | <span
+                    class="node-span">Nodemailer</span
+                  >
                 </p>
                 <p class="text-[13px] border-2 w-fit">
-                  API: SWAPI Star Wars API
+                  Styling and Animation: Animate.css
                 </p>
               </div>
 
               <div class="m-3">
                 <ul class="list-disc flex flex-col gap-5 md:gap-2">
                   <li class="spotlight">
-                    Pair Programming using a driver/navigator set up, to design
-                    and create a front end <span class="react-span">React</span>
-                    app game using the Star Wars Api.
+                    Designed and built a responsive, mobile-first website for a
+                    musician.
                   </li>
                   <li class="spotlight">
-                    Worked quickly and accurately under time constraints
+                    Liaised with client to design, implement and adapt according
+                    to feedback.
+                  </li>
+                  <li class="spotlight">
+                    Utilised various methods to showcase artist work, such as
+                    I-frames and connecting to Linktrees.
+                  </li>
+                  <li class="spotlight">
+                    Integrated a contact form using <span class="node-span"
+                      >Nodemailer</span
+                    > , attached directly to the clients professional email. Including
+                    validation and feedback.
                   </li>
                 </ul>
               </div>
             </Projects>
           </div>
-        </div>
-      </div>
 
-      <!-- ---------------------- -->
+          <div class="flex flex-col">
+            <div class="">
+              <div class="flex flex">
+                <Projects
+                  title="Paws For Affection"
+                  tag="Dog adoption site"
+                  site="https://pawsforaffection.netlify.app/"
+                  repo="https://github.com/K-velvet-P/TheHackitectsFinalProjects"
+                />
+              </div>
 
-      <div>
-        <div class="bg-slate-100">
-          <h2 class="text-2xl text-center">Profile</h2>
+              <div>
+                <p class="text-[13px] border-2 w-fit">
+                  Frontend: <span class="JS-span">JavaScript</span> |
+                  <span class="react-span">React</span> | Swiper Material UI | <span
+                    class="jest-span">Jest</span
+                  >
+                  <span class="playwright-span">Playwright</span> | Netlify
+                </p>
+                <p class="text-[13px] border-2 w-fit">
+                  Backend: <span class="node-span">Node.js</span> | Supabase
+                </p>
+              </div>
+
+              <div class="m-3 background-spotlight">
+                <ul class="list-disc flex flex-col gap-5 md:gap-2">
+                  <li class="spotlight">
+                    Developed a full-stack <span class="react-span">React</span>
+                    app in an agile team and demoing it to industry experts.
+                  </li>
+                  <li class="spotlight">
+                    Collaborated with team members to ideate, plan and execute
+                    the project
+                  </li>
+                  <li class="spotlight">
+                    Participated in pair programming, improving team-working,
+                    communication, and problem-solving skills.
+                  </li>
+                  <li class="spotlight">
+                    Led the team in daily stand-ups, retros and sprints.
+                  </li>
+                  <li class="spotlight">
+                    Contributed to building a database, linking it to the
+                    frontend and displaying dogs avabile for adoption on site.
+                  </li>
+                  <li class="spotlight">
+                    Contributed to implementing log in functionally with
+                    authorisation.
+                  </li>
+                  <li class="spotlight">
+                    Contributed to utelising superbase’s built it Postgrest
+                    query builder to allow authorised users to populate the
+                    database.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="">
+              <Projects
+                title="Top Trump Star Wars"
+                tag="Top Trump card game"
+                site="https://top-trump-star-wars.vercel.app/"
+                repo="https://github.com/K-velvet-P/TopTrumpStarWars"
+              >
+                <div class="background-spotlight">
+                  <p class="text-[13px] border-2 w-fit">
+                    Frontend: <span class="JS-span">JavaScript</span> | <span
+                      class="react-span">React</span
+                    > | <span class="jest-span">Jest</span>
+                    <span class="playwright-span">Playwright</span> | Vercel
+                  </p>
+                  <p class="text-[13px] border-2 w-fit">
+                    Backend: <span class="node-span">Node.js</span>
+                  </p>
+                  <p class="text-[13px] border-2 w-fit">
+                    API: SWAPI Star Wars API
+                  </p>
+                </div>
+
+                <div class="m-3">
+                  <ul class="list-disc flex flex-col gap-5 md:gap-2">
+                    <li class="spotlight">
+                      Pair Programming using a driver/navigator set up, to
+                      design and create a front end <span class="react-span"
+                        >React</span
+                      >
+                      app game using the Star Wars Api.
+                    </li>
+                    <li class="spotlight">
+                      Worked quickly and accurately under time constraints
+                    </li>
+                  </ul>
+                </div>
+              </Projects>
+            </div>
+          </div>
         </div>
-        <p
-          class="spotlight m-5 text-center md:m-10 indent-8 md:text-justify leading-loose"
-        >
-          Throughout my life, I have travelled extensively, lived with diverse
-          groups, and embraced new perspectives. These experiences have shaped
-          my ability to work in a team, adapt quickly, think creatively, and
-          approach challenges with an open mind I have played a vital role in
-          raising and mentoring my younger sisters, instilling in me strong
-          leadership, patience, and the ability to guide others towards growth.
-        </p>
-        <p
-          class="spotlight m-5 text-center md:m-10 indent-8 md:text-justify leading-loose"
-        >
-          With the help of technology, I have been able to overcome my dyslexia
-          and discover a love for learning, which has ignited a strong passion
-          for all things tech.
-        </p>
-        <p
-          class="spotlight m-5 text-center md:m-10 indent-8 md:text-justify leading-loose"
-        >
-          Recently completing a 16-week coding bootcamp honed my skills in
-          front-end, back-end, and infrastructure technologies. i complement
-          this with regular participation in tech meet-ups to further enrich my
-          knowledge.
-        </p>
+
+        <div>
+          <div class="bg-slate-100">
+            <h2 class="text-2xl text-center">Profile</h2>
+          </div>
+          <p
+            class="spotlight m-3 text-center md:m-8 indent-8 md:text-justify leading-loose"
+          >
+            Throughout my life, I have travelled extensively, lived with diverse
+            groups, and embraced new perspectives. These experiences have shaped
+            my ability to work in a team, adapt quickly, think creatively, and
+            approach challenges with an open mind I have played a vital role in
+            raising and mentoring my younger sisters, instilling in me strong
+            leadership, patience, and the ability to guide others towards
+            growth.
+          </p>
+          <p
+            class="spotlight m-3 text-center md:m-8 indent-8 md:text-justify leading-loose"
+          >
+            With the help of technology, I have been able to overcome my
+            dyslexia and discover a love for learning, which has ignited a
+            strong passion for all things tech.
+          </p>
+          <p
+            class="spotlight m-3 text-center md:m-8 indent-8 md:text-justify leading-loose"
+          >
+            Recently completing a 16-week coding bootcamp honed my skills in
+            front-end, back-end, and infrastructure technologies. i complement
+            this with regular participation in tech meet-ups to further enrich
+            my knowledge.
+          </p>
+        </div>
       </div>
     </div>
   </body>
+  <!-- highlighting words  -->
+  <script>
+    function highlightWords() {
+      const highlightElements = (className: string) => {
+        const elements = document.querySelectorAll(
+          `.${className}`
+        ) as NodeListOf<HTMLSpanElement>;
+
+        elements.forEach((span) => {
+          span.addEventListener("mouseover", () => {
+            elements.forEach((span) => {
+              span.style.color = "white";
+              span.style.background = "black";
+            });
+          });
+
+          span.addEventListener("mouseout", () => {
+            elements.forEach((span) => {
+              span.style.color = "";
+              span.style.background = "";
+            });
+          });
+        });
+      };
+
+      const skills = [
+        "playwright-span",
+        "jest-span",
+        "next-span",
+        "JS-span",
+        "react-span",
+        "node-span",
+        "AS-span",
+      ];
+      skills.forEach((skill) => highlightElements(skill));
+    }
+    highlightWords();
+  </script>
 </html>
-<!-- highlighting words  -->
-<script>
-  function highlightWords () {
-    const highlightElements = (className: string) => {
-      const elements = document.querySelectorAll(
-        `.${className}`
-      ) as NodeListOf<HTMLSpanElement>;
-
-      elements.forEach((span) => {
-        span.addEventListener("mouseover", () => {
-          elements.forEach((span) => {
-            span.style.color = "white";
-            span.style.background = "black";
-          });
-        });
-
-        span.addEventListener("mouseout", () => {
-          elements.forEach((span) => {
-            span.style.color = "";
-            span.style.background = "";
-          });
-        });
-      });
-    };
-
-    const skills = [
-      "playwright-span",
-      "jest-span",
-      "next-span",
-      "JS-span",
-      "react-span",
-      "node-span",
-    ];
-    skills.forEach((skill) => highlightElements(skill));
-  };
-  highlightWords();
-
-</script>
